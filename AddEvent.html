@@ -9,7 +9,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<form class = "form-horizontal" action = "action.js">
+		<form class = "form-horizontal" action = "/event/admin/add">
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="name">Заглавие:</label>
 				<div class="col-sm-10">
@@ -46,30 +46,15 @@
 					<input type="time" class="form-control" id="end1" placeholder="Въведи краен час">
 				</div>
 			</div>
-			<div class="form-check">
-				<label class="form-check-label">
-					<input class="form-check-input" type="radio" name="exampleRadios" id="type" value="0">
-				Официален празник
-				</label>
-			</div>
-			<div class="form-check">
-				<label class="form-check-label">
-					<input class="form-check-input" type="radio" name="exampleRadios" id="type" value="1">
-				Неработен ден
-				</label>
-			</div>
-			<div class="form-check">
-				<label class="form-check-label">
-					<input class="form-check-input" type="radio" name="exampleRadios" id="type" value="2">
-				Значим международен ден
-				</label>
-			</div>
-			<div class="form-check">
-				<label class="form-check-label">
-					<input class="form-check-input" type="radio" name="exampleRadios" id="type" value="3">
-				Оферти и промоции
-				</label>
-			</div>
+			<select class="selectpicker">
+				<option value = "0">Официален празник</option>
+				<option value = "1">Неработен ден</option>
+				<option value = "5">Рожден ден</option>
+				<option value = "2">Имен ден</option>
+				<option value = "3">Значим международен ден</option>
+				<option value = "4">Оферти и промоции</option>
+				
+</select>
 			<div class = "d-flex justify-content-center">
 				<a href="AddEvent.html" role="button" class = "btn btn-danger"><h1> Изпрати</h1></a>
 		</form>
