@@ -1,6 +1,13 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css.map"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
 </head>
 <body>
 	<div class="jumbotron" style = "background-color:#658df2">
@@ -24,26 +31,42 @@
 			</div>
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="name">Начална дата:</label>
-				<div class="col-sm-10">
-					<input type="date" class="form-control" id="start0" placeholder="Въведи начална дата">
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="name">Начален час:</label>
-				<div class="col-sm-10">
-					<input type="time" class="form-control" id="start1" placeholder="Въведи начален час">
-				</div>
-			</div>
+						<div class="row">
+							<div class='col-sm-10'>
+								<div class="form-group">
+									<div class='input-group date' id='datetimepicker1'>
+										<input type='datetime-local' class="form-control" name = "start" />
+										<span class="input-group-addon">
+											<span class="glyphicon glyphicon-calendar"></span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<script type="text/javascript">
+								$(function () {
+									$('#datetimepicker1').datetimepicker();
+								});
+							</script>
+						</div>
+					</div>
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="name">Крайна дата:</label>
-				<div class="col-sm-10">
-					<input type="date" class="form-control" id="end0" placeholder="Въведи крайна дата">
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="name">Начален час:</label>
-				<div class="col-sm-10">
-					<input type="time" class="form-control" id="end1" placeholder="Въведи краен час">
+						<div class="row">
+							<div class='col-sm-10'>
+								<div class="form-group">
+									<div class='input-group date' id='datetimepicker1'>
+										<input type='datetime-local' class="form-control" name = "end"/>
+										<span class="input-group-addon">
+											<span class="glyphicon glyphicon-calendar"></span>
+										</span>
+									</div>
+							<script type="text/javascript">
+								$(function () {
+									$('#datetimepicker1').datetimepicker();
+								});
+							</script>
+						</div>
+					</div>
 				</div>
 			</div>
 			<select class="selectpicker">
