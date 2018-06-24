@@ -1,0 +1,80 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<div class="jumbotron" style = "background-color:#658df2">
+		<div class="container">
+			<h2>Влязъл като </h2>
+		</div>
+	</div>
+	<div class="container">
+		<form class = "form-horizontal" action = "action.js">
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="name">Заглавие:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="name" placeholder="Въведи Заглавие">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="text">Текст:</label>
+				<div class="col-sm-10">
+					<textarea type="text" class="form-control" id="desc" placeholder="Въведи Текст"></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="name">Начална дата:</label>
+				<div class="col-sm-10">
+					<input type="date" class="form-control" id="start0" placeholder="Въведи начална дата">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="name">Начален час:</label>
+				<div class="col-sm-10">
+					<input type="time" class="form-control" id="start1" placeholder="Въведи начален час">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="name">Крайна дата:</label>
+				<div class="col-sm-10">
+					<input type="date" class="form-control" id="end0" placeholder="Въведи крайна дата">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="name">Начален час:</label>
+				<div class="col-sm-10">
+					<input type="time" class="form-control" id="end1" placeholder="Въведи краен час">
+				</div>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="type" value="0">
+				Официален празник
+				</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="type" value="1">
+				Неработен ден
+				</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="type" value="2">
+				Значим международен ден
+				</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" type="radio" name="exampleRadios" id="type" value="3">
+				Оферти и промоции
+				</label>
+			</div>
+			<div class = "d-flex justify-content-center">
+				<a href="AddEvent.html" role="button" class = "btn btn-danger"><h1> Изпрати</h1></a>
+		</form>
+	</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
